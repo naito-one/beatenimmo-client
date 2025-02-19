@@ -24,7 +24,7 @@
       </div>
 
       <img
-        src="/img/beatenimmo-logo-light.svg"
+        src="/img/logo.svg"
         alt="BeatenIMMO"
         class="z-10 mt-16 lg:mt-12 w-3/4 select-none sm:w-1/2 lg:w-[35rem]"
       />

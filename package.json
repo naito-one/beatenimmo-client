@@ -8,8 +8,7 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "deploy": "push-dir --dir=.output/public --branch=gh-pages --cleanup",
-    "deploy-prod": "push-dir --dir=.output/public --branch=gh-pages-prod --cleanup"
+    "deploy": "push-dir --dir=.output/public --branch=gh-pages --cleanup"
   },
   "dependencies": {
     "@nuxt/image": "^1.9.0",
