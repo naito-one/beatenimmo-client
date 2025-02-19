@@ -11,6 +11,8 @@
     "deploy": "push-dir --dir=.output/public --branch=gh-pages --cleanup"
   },
   "dependencies": {
+    "@nuxt/image": "^1.9.0",
+    "@nuxtjs/seo": "^2.2.0",
     "@tailwindcss/vite": "^4.0.6",
     "nuxt": "^3.15.4",
     "tailwindcss": "^4.0.6",

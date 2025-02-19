@@ -4,10 +4,10 @@
       src="/video/beatenimmo_frontpage.mp4"
       autoplay
       loop
-      class="object-cover fixed top-0 left-0 w-full h-screen -z-10"
+      class="object-cover object-[50%_60%] fixed top-0 left-0 w-full h-screen -z-10"
     ></video>
 
-    <div class="relative w-full min-h-[100vh] flex flex-col items-center">
+    <div class="relative w-full min-h-[100vh] flex flex-col items-center p-4">
       <!-- gradient background -->
       <div class="flex absolute top-0 flex-col w-full h-full -z-10">
         <div class="w-full h-80 lg:h-96 smooth-gradient"></div>
@@ -17,6 +17,7 @@
         <img
           src="/img/background.png"
           class="w-screen h-12 bg-gray-100/90 md:h-auto lg:h-24 object-fit"
+          alt="Wavy background"
         />
         <!-- background filled opaque-->
         <div class="bg-white grow"></div>
@@ -25,23 +26,26 @@
       <img
         src="/img/beatenimmo-logo-light.svg"
         alt="BeatenIMMO"
-        class="z-10 mt-16 lg:mt-12 w-3/4 select-none sm:w-1/2 lg:w-[35rem] "
+        class="z-10 mt-16 lg:mt-12 w-3/4 select-none sm:w-1/2 lg:w-[35rem]"
       />
-      <p class="px-4 text-lg text-center">
+      <p class="text-lg text-center">
         Your real estate partner in Beatenberg
       </p>
 
       <div
-        class="overflow-hidden m-4 text-center text-white rounded-lg shadow-md bg-bi-blue"
+        class="overflow-hidden w-full sm:w-auto mt-4 lg:mt-12 text-center text-white rounded-lg shadow-md bg-bi-blue"
       >
-        <img
+        <NuxtImg
+          format="webp"
           src="/img/splash.jpg"
           alt="Wooden Building in Beatenberg"
           class="w-full sm:w-auto sm:h-96"
+          sizes="xs:200px md:500px lg:1024"
         />
 
         <div class="flex flex-col items-center p-4">
-          <p class="px-4 mb-4">Website under construction</p>
+          <p>Website under construction.</p>
+          <p class="mb-4">Visit us again soon !</p>
           <a href="mailto:info@beatenimmo.ch" class="underline font-numbers"
             >info@beatenimmo.ch</a
           >
@@ -53,6 +57,17 @@
     </div>
   </main>
 </template>
+<script lang="ts" setup>
+defineOgImageComponent('NuxtSeo', {
+  title: 'BeatenIMMO',
+  description: 'Your real estate partner in Beatenberg',
+  theme: '#274770ff',
+})
+useSchemaOrg([
+  defineWebPage(),
+  defineWebSite()
+])
+</script>
 <style>
 .smooth-gradient {
   background: linear-gradient(
