@@ -1,1 +1,8 @@
+@import url(https://fonts.bunny.net/css?family=fira-sans:400|raleway:500,900);
 @import "tailwindcss";
+
+@theme {
+  --color-bi-blue: #274770ff;
+  --font-numbers: 'Fira Sans', sans-serif;
+  --font-sans: 'Raleway', sans-serif;
+}

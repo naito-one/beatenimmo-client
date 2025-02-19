@@ -7,35 +7,49 @@
       class="object-cover fixed top-0 left-0 w-full h-screen -z-10"
     ></video>
 
-    <div
-      class="relative top-[50vh] lg:top-[45vh] w-full min-h-[50vh] lg:min-h-[55vh] flex flex-col items-center"
-    >
+    <div class="relative w-full min-h-[100vh] flex flex-col items-center">
       <!-- gradient background -->
       <div class="flex absolute top-0 flex-col w-full h-full -z-10">
-        <div
-          class="w-full h-60 to-transparent lg:h-72 from-gray-100/90 smooth-gradient"
-        ></div>
-        <!-- background filled-->
-        <div class="bg-gray-100/90 grow"></div>
+        <div class="w-full h-80 lg:h-96 smooth-gradient"></div>
+        <!-- background filled semi-transparent-->
+        <div class="h-12 bg-gray-100/90"></div>
+        <!-- background filled opaque transition-->
+        <img
+          src="/img/background.png"
+          class="w-screen h-12 bg-gray-100/90 md:h-auto lg:h-24 object-fit"
+        />
+        <!-- background filled opaque-->
+        <div class="bg-white grow"></div>
       </div>
 
       <img
         src="/img/beatenimmo-logo-light.svg"
         alt="BeatenIMMO"
-        class="z-10 mt-16 lg:mt-12 w-2/3 select-none sm:w-1/2 lg:w-[35rem]"
+        class="z-10 mt-16 lg:mt-12 w-3/4 select-none sm:w-1/2 lg:w-[35rem] "
       />
-      <p class="px-4 mb-4 text-lg text-center">
+      <p class="px-4 text-lg text-center">
         Your real estate partner in Beatenberg
       </p>
-      <p class="px-4 mb-4 italic">Website under construction</p>
-      <a
-        href="mailto:info@beatenimmo.ch"
-        class="font-bold text-blue-900 underline"
-        >info@beatenimmo.ch</a
+
+      <div
+        class="overflow-hidden m-4 text-center text-white rounded-lg shadow-md bg-bi-blue"
       >
-      <a href="tel:+41 78 703 00 33" class="font-bold text-blue-900 underline"
-        >+41 78 703 00 33</a
-      >
+        <img
+          src="/img/splash.jpg"
+          alt="Wooden Building in Beatenberg"
+          class="w-full sm:w-auto sm:h-96"
+        />
+
+        <div class="flex flex-col items-center p-4">
+          <p class="px-4 mb-4">Website under construction</p>
+          <a href="mailto:info@beatenimmo.ch" class="underline font-numbers"
+            >info@beatenimmo.ch</a
+          >
+          <a href="tel:+41 78 703 00 33" class="underline font-numbers"
+            >+41 78 703 00 33</a
+          >
+        </div>
+      </div>
     </div>
   </main>
 </template>

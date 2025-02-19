@@ -7,7 +7,8 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "deploy": "push-dir --dir=.output/public --branch=gh-pages --cleanup"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.0.6",
@@ -18,6 +19,7 @@
   },
   "devDependencies": {
     "@nuxtjs/apollo": "^5.0.0-alpha.14",
-    "prettier": "=3.5.1"
+    "prettier": "=3.5.1",
+    "push-dir": "^0.4.1"
   }
 }
