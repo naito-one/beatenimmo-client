@@ -35,11 +35,11 @@
       <div
         class="overflow-hidden w-full sm:w-auto mt-4 lg:mt-12 text-center text-white rounded-lg shadow-md bg-bi-blue"
       >
-        <NuxtImg
+        <NuxtPicture
           format="webp"
           src="/img/splash.jpg"
           alt="Wooden Building in Beatenberg"
-          class="w-full sm:w-auto sm:h-96"
+          :imgAttrs="{class:'w-full sm:w-auto sm:h-96'}"
           sizes="xs:200px md:500px lg:1024"
         />
 
