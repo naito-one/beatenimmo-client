@@ -1,0 +1,6 @@
+# START nuxt-robots (indexable)
+User-agent: *
+Disallow: 
+
+Sitemap: https://beatenimmo.ch/sitemap.xml
+# END nuxt-robots
